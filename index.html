@@ -28,6 +28,23 @@
             background: linear-gradient(to right, #000, #222, #000);
             text-transform: uppercase;
             letter-spacing: 3px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(4px);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        nav li {
+            display: inline;
         }
 
         .glitch {
@@ -84,6 +101,40 @@
             border: none;
         }
 
+        .artist-profiles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .artist-profiles .card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 15px;
+            width: 200px;
+            border-radius: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .artist-profiles .card:hover {
+            transform: scale(1.05);
+        }
+
+        .blog-posts {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .blog-posts article {
+            background: #1a1a1a;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #555;
+        }
+
         footer {
             padding: 10px;
             background-color: #111;
@@ -102,7 +153,7 @@
             </ul>
         </nav>
     </header>
-    
+
     <section id="merch">
         <h2>Merch</h2>
         <p>Exclusive 876CULT gear available now.</p>
@@ -110,19 +161,33 @@
             <iframe src="https://your-printful-store-url-here"></iframe>
         </div>
     </section>
-    
+
     <section id="artists">
         <h2>Artists</h2>
         <p>Meet the creatives behind the movement.</p>
-        <div class="artist-profiles"></div>
+        <div class="artist-profiles">
+            <div class="card">
+                <h3>xxlvciferxx</h3>
+                <p>Darkwave / Phonk / Chaos</p>
+            </div>
+            <div class="card">
+                <h3>dolla$ignshane</h3>
+                <p>Sleaze-style bars & glitchcore</p>
+            </div>
+        </div>
     </section>
-    
+
     <section id="blog">
         <h2>Blog & Updates</h2>
         <p>Latest news and behind-the-scenes content.</p>
-        <div class="blog-posts"></div>
+        <div class="blog-posts">
+            <article>
+                <h3>Blackout Recap</h3>
+                <p>Blackout was 🔥. From possessed projections to mosh pits under strobe light...</p>
+            </article>
+        </div>
     </section>
-    
+
     <footer>
         <p>&copy; 2025 876CULT. All rights reserved.</p>
     </footer>
