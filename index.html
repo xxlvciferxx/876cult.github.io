@@ -95,10 +95,40 @@
             border-radius: 10px;
         }
 
-        iframe {
+        .product-card {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        .product-card img {
             width: 100%;
-            height: 600px;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0 5px 0;
+        }
+
+        .product-card p {
+            font-size: 0.9rem;
+        }
+
+        .product-card .price {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product-card button {
+            background-color: white;
+            color: black;
             border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
         }
 
         .artist-profiles {
@@ -158,7 +188,13 @@
         <h2>Merch</h2>
         <p>Exclusive 876CULT gear available now.</p>
         <div class="store-container">
-            <iframe src="https://your-printful-store-url-here"></iframe>
+            <div class="product-card">
+                <img src="cuffed-beanie-black-front-67f1839c2f6f2.png" alt="876CULT Beanie">
+                <h3>876CULT Beanie</h3>
+                <p>Black knit beanie with embroidered 876CULT logo.</p>
+                <div class="price">$25.00 USD</div>
+                <button onclick="window.location.href='https://wa.me/18764381519?text=Hi%20I%27m%20placing%20an%20order%20for%20the%20876CULT%20Beanie.%20Please%20send%20me%20the%20checkout%20form%20and%20details.%20Payment%20will%20be%20made%20via%20PayPal.'">Buy Now</button>
+            </div>
         </div>
     </section>
 
